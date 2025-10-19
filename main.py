@@ -46,3 +46,23 @@ import numpy as np
 # # Compute column means (average of each feature)
 # column_means = np.mean(people, axis=0)
 # print("Average [Age, Height, Weight]:", column_means)
+
+
+# Matrix operations
+a_matrix = np.array([[1, 2],
+                     [3, 4]])
+
+b_matrix = np.array([[5, 6],
+                     [7, 8]])
+
+add = a_matrix + b_matrix
+subract = np.subtract(a_matrix, b_matrix)
+dotProduct = np.dot(a_matrix, b_matrix)
+transpose = np.transpose(a_matrix)
+inverse = np.linalg.inv(a_matrix)
+
+print("\nSum of A and B Matrices\n",add)
+print("\nSubract of A and B Matrices\n", subract)
+print("\nDot Product of A and B Matrices\n", dotProduct)
+print("\nTranspose Matrix A\n", transpose)
+print("\nInverse of Matrix A\n", inverse)
