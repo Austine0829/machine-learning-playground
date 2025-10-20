@@ -61,11 +61,12 @@ dotProduct = np.dot(a_matrix, b_matrix)
 transpose = np.transpose(a_matrix)
 inverse = np.linalg.inv(a_matrix)
 
-unstransformedMatrix = np.dot(a_matrix, inverse)
+matrixIdentity = np.dot(a_matrix, inverse)
 
 print("\nSum of A and B Matrices\n",add)
 print("\nSubract of A and B Matrices\n", subract)
 print("\nDot Product of A and B Matrices\n", dotProduct)
 print("\nTranspose Matrix A\n", transpose)
+
 print("\nInverse of Matrix A\n", inverse)
-print("\n Untransformed Matrix A\n", np.round(unstransformedMatrix, 10))
+print("\n Matrix A Identity\n", np.round(matrixIdentity, 10))
