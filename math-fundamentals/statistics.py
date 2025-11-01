@@ -1,6 +1,5 @@
 import numpy as np
 
-
 # Z-Score
 # prices = np.array([100, 300, 500, 700, 900])
 
